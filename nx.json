@@ -33,6 +33,9 @@
     "learn-lit-e2e": {
       "tags": [],
       "implicitDependencies": ["learn-lit"]
+    },
+    "web-components": {
+      "tags": []
     }
   }
 }

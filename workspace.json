@@ -105,6 +105,28 @@
           }
         }
       }
+    },
+    "web-components": {
+      "root": "libs/web-components",
+      "sourceRoot": "libs/web-components/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/web-components/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web-components"],
+          "options": {
+            "jestConfig": "libs/web-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
